@@ -1,0 +1,7 @@
+*.npy
+*.npz
+*.pyc
+*.pt
+*.png
+*.pth
+All_results/
