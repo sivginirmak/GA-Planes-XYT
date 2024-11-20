@@ -58,7 +58,6 @@ def get_parser():
     # convert ints to bools
     args.convex = bool(args.convex)
     args.semi_convex = bool(args.semi_convex)
-    args.useSVM = bool(args.useSVM)
     args.pe = bool(args.pe)
     args.save_on = bool(args.save_on)
 

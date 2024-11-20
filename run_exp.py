@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-from nerf_models import *
 from triplane_models import *
 import parser
 import helpers
@@ -70,7 +69,7 @@ def main():
     ## needed for all nerf / sc / triplane etc.
     configs = {} # bundle all needed variables for training etc.
 
-    images = np.load("person_masks.npy")
+    images = np.load("data/person_masks.npy")
     images = images[:, :450, 350:700] # crop zeros
 
     # np.save("xyt_data/gt_vid.npy", images[:96]) # uncomment to form the gt for threshold optimization for iou score

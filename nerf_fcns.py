@@ -50,7 +50,7 @@ def test_threshold(thresh, gt_thresh, pred):
 
 def get_thr_iou(pred):
   # load gt video: (this consists of segmented frames)
-  gt = np.load("xyt_data/gt_vid.npy")  # 96, 450, 350, binary valued 0 and 1
+  gt = np.load("data/gt_vid.npy")  # 96, 450, 350, binary valued 0 and 1
   gt_test = gt[::3,...]  # 32, 450, 350
   gt_train = list(gt)
   del gt_train[2::3]
